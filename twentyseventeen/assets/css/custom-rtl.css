@@ -1,0 +1,76 @@
+/* styles for rtl */
+
+@media screen and (min-width: 48em){
+    .has-sidebar:not(.error404) #primary {
+        float: right;
+    }
+    .has-sidebar #secondary {
+        float: left;
+    }
+}
+
+.woocommerce #content div.product div.thumbnails a,
+.woocommerce div.product div.thumbnails a,
+.woocommerce-page #content div.product div.thumbnails a,
+.woocommerce-page div.product div.thumbnails a{
+    float: right;
+    margin-right: 0;
+    margin-left: 3.8%;
+}
+
+.single-product .woocommerce-product-rating .star-rating {
+    float: right;
+    margin-right: 0;
+    margin-left: .25em;
+}
+
+.woocommerce-review-link{
+    float: right;
+}
+
+/* search */
+.widget_product_search .search-field{
+    padding-right: .5em;
+    padding-left: 100px;
+}
+
+.widget_product_search input[type=submit] {
+    right: auto;
+    left: .5em;
+}
+
+/* remove */
+.widget .product_list_widget li a.remove {
+    float: left;
+}
+
+/* star-rating */
+.star-rating span{
+    left: auto;
+    right: 0;
+}
+
+.star-rating::before{
+    left: auto;
+    right: 0;
+}
+
+.star-rating span::before {
+    right: 0;
+    left: auto;
+}
+
+
+/* brackets bug */
+.product h3:after {
+    content: "\200E";
+}
+
+.product_title:after,
+.woocommerce-breadcrumb:after{
+    content: "\200E";
+}
+
+.widget_shopping_cart_content .buttons a{
+    margin-bottom: 10px;
+}
